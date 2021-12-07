@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../img/rbc.jpg);
+    background-size: cover;
+    opacity: 0.75;
+}
+.pTitle {
+    text-align: justify;
+    font-size: 65px;
+    background-color: rgb(102, 11, 46);
+    font-family: Trebuchet MS;
+    color: mintcream;
+    margin-top: 10px;
+}
+.login {
+    margin-top: 0px;
+    word-spacing: 20px;
+    text-align:right;
+    font-size: 25px;
+    font-family: Trebuchet MS;
+    background-color: black;
+}
+.main {
+    display: grid;
+    grid-template-columns: 0% 23% 24% 25% 24%;
+    grid-gap: 10px;
+    margin-top: 10px;
+    background-color:navy;
+    color: mintcream;
+    font-size: 35px;
+    text-align: center;
+    font-family: Trebuchet MS;
+} 
+.container{
+   width: 100%;
+    margin-top:20px;
+    background-color:rgb(102, 11, 46) ;
+    overflow: auto;
+}
+.gallery{
+    margin: 5px;
+    border: 4px solid navy;
+    float: left;
+    width: 402px;
+
+}
+.gallery img{
+    width: 100%;
+    height: 50%;
+}
+.desc{
+    padding: 15px;
+    text-align:center;
+    height: auto;
+    background-color: black;
+    color: mintcream;
+    font-size: 20px;
+    font-family: Trebuchet MS;
+}
+.content{
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    color: rgb(102, 11, 46);
+    background-color: mintcream;
+    margin-top:20px;
+    border: 2px solid navy;
+    border-radius: 1em;
+    font-size: 20px;
+    font-family: Trebuchet MS;
+    text-align: center;
+} 
+p{
+    color: mintcream;
+    font-size: 25px;
+    font-family: Calibri;
+    background-color: black ;
+    text-align: left;
+    border: 2px solid rgb(102, 11, 46);
+}
+h1{
+    color: navy;
+    font-size: 35px;
+    text-align: left;
+    font-family: Trebuchet MS;
+    background-color: whitesmoke;
+    border: 2px black;
+}

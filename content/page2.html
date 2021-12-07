@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blood Banks</title>
+        <link rel="stylesheet" href="Main.css">
+        <link rel="stylesheet" href="Filter.css">
+        <style>
+            a:link, a:active, a:visited
+              {
+                background-color: black;
+                color: white;
+                text-decoration: none;
+              }
+            a:hover
+              {
+                background-color: darkslategray;
+              } 
+        </style>
+    </head>
+    <body>
+        <div class="pTitle">Red Bank</div>
+        <div class="login">
+              <a href="register.php" target="_blank">Register</a>
+              <a href="login.php" target="_blank">Login</a>
+        </div>
+        <div class="main">
+            <span> </span>
+            <a href="../index.php">Home</a>
+            <a href="page1.html">About Us</a>
+            <a href="page3.html">How to Donate</a>
+            <a href="page4.php">Contact Us</a>
+        </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Locations ...">
+        <table id="blood" align="center">
+          <tr class="header">
+            <th style="width:40%;">Branch Address</th>
+            <th style="width:35%;">Blood Availability</th>
+            <th style="width:25%;">Branch Code</th>
+          </tr>
+          <tr>
+            <td>Malad East, Mumbai, Maharashtra</td>
+            <td>2/4</td>
+            <td>10001</td>
+          </tr>
+          <tr>
+            <td>Jaipur, Rajasthan</td>
+            <td>3/4</td>
+            <td>10002</td>
+          </tr>
+          <tr>
+            <td>Jaisalmer, Rajasthan</td>
+            <td>1/4</td>
+            <td>10003</td>
+          </tr>
+            <td>Ahemdabad, Gujarat</td>
+            <td>3/4</td>
+            <td>10004</td>
+          </tr><tr>
+            <td>Chennai, Tamil Nadu</td>
+            <td>4/4</td>
+            <td>10005</td>
+          </tr><tr>
+            <td>Shimla, Himachal Pradesh</td>
+            <td>2/4</td>
+            <td>10006</td>
+          </tr>
+          <tr>
+            <td>Agra, Uttar Pradesh</td>
+            <td>3/4</td>
+            <td>10007</td>
+          </tr>
+          <tr>
+              <td>Patna, Bihar</td>
+              <td>3/4</td>
+              <td>10008</td>
+          </tr>
+          <tr>
+            <td>Pune, Maharashtra</td>
+            <td>4/4</td>
+            <td>10009</td>
+          </tr>
+            <td>Panji, Goa</td>
+            <td>2/4</td>
+            <td>10010</td>
+          </tr>
+          <tr>
+            <td>Bandra, Maharashtra</td>
+            <td>3/4</td>
+            <td>10011</td>
+          </tr>
+          <tr>
+            <td>Amritsar, Punjab</td>
+            <td>1/4</td>
+            <td>10012</td>
+          </tr>
+          <tr>
+            <td>Ranchi, Jharkhand</td>
+            <td>1/4</td>
+            <td>10013</td>
+          </tr>
+            <td>Surat, Gujarat</td>
+            <td>3/4</td>
+            <td>10014</td>
+          </tr><tr>
+            <td>Vellore, Tamil Nadu</td>
+            <td>4/4</td>
+            <td>10015</td>
+          </tr><tr>
+            <td>Udaipur, Rajasthan</td>
+            <td>1/4</td>
+            <td>10016</td>
+          </tr>
+          <tr>
+            <td>Lucknow, Uttar Pradesh</td>
+            <td>3/4</td>
+            <td>10017</td>
+          </tr>
+          <tr>
+              <td>Banglore, Karnataka</td>
+              <td>3/4</td>
+              <td>10018</td>
+          </tr>
+          <tr>
+            <td>Kolkata, West Bengal</td>
+            <td>4/4</td>
+            <td>10019</td>
+          </tr>
+            <td>Itanagar, Arunanchal Pradesh</td>
+            <td>2/4</td>
+            <td>10020</td>
+          </tr>
+        </table>
+        <script>
+          function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("blood");
+            tr = table.getElementsByTagName("tr");
+          
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }
+            }
+          }
+          </script>
+        </body>
+        </html>

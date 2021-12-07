@@ -1,0 +1,35 @@
+#myInput {
+  margin-top: 10px;
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 20px; 
+    color: Navy;
+    font-family: Trebuchet MS;
+    padding: 12px 20px 12px 40px; 
+    border: 2px solid navy; 
+    margin-bottom: 12px; 
+  }
+  
+  #blood {
+    background-color: black;
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 2px solid navy; 
+    font-size: 20px; 
+    color: mintcream;
+    font-family: Trebuchet MS;
+  }
+  
+  #blood th, #blood td {
+    text-align: left; 
+    padding: 12px; 
+  }
+  
+  #blood tr {
+    border-bottom: 1px solid rgb(102, 11, 46);
+  }
+  
+  #blood tr.header, #blood tr:hover {
+    background-color: rgb(102, 11, 46);
+  }

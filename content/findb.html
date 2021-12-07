@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Blood</title>
+        <link rel="stylesheet" href="Main.css">
+        <link rel="stylesheet" href="Filter.css">
+        <style>
+            a:link, a:active, a:visited
+              {
+                background-color: black;
+                color: white;
+                text-decoration: none;
+              }
+            a:hover
+              {
+                background-color: darkslategray;
+              } 
+        </style>
+    </head>
+    <body>
+        <div class="pTitle">Red Bank</div>
+        <div class="login">
+              <a href="register.php" target="_blank">Register</a>
+              <a href="login.php" target="_blank">Login</a>
+        </div>
+        <div class="main">
+            <span></span>
+            <a href="../index.php">Home</a>
+            <a href="page2.html">Blood Banks</a>
+            <a href="page3.html">How to Donate</a>
+            <a href="page4.php">Contact Us</a>
+        </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search blood type ...">
+        <table id="blood" align="center">
+          <tr class="header">
+            <th style="width:30%;">Blood type</th>
+            <th style="width:40%;">Blood bank Address</th>
+            <th style="width:30%;">Blood bag No.</th>
+          </tr>
+          <tr>
+            <td>AB minus</td>
+            <td>Udaipur, Rajasthan</td>
+            <td>201117031</td>
+          </tr>
+          <tr>
+            <td>A plus</td>
+            <td>Surat, Gujarat</td>
+            <td>201115310</td>
+          </tr>
+          <tr>
+            <td>B minus</td>
+            <td>Amritsar, Punjab</td>
+            <td>201118721</td>
+          </tr>
+          <tr>
+            <td>O plus</td>
+            <td>Mumbai, Maharashta</td>
+            <td>201117040</td>
+          </tr>
+          <tr>
+            <td>A plus</td>
+            <td>Mumbai, Maharashtra</td>
+            <td>201117910</td>
+          </tr>
+          <tr>
+            <td>AB plus</td>
+            <td>Jaipur, Rajasthan</td>
+            <td>201114030</td>
+          </tr>
+          <tr>
+            <td>B plus</td>
+            <td>Surat, Gujarat</td>
+            <td>201116320</td>
+          </tr>
+          <tr>
+            <td>B minus</td>
+            <td>Patiala, Punjab</td>
+            <td>201118721</td>
+          </tr>
+          <tr>
+            <td>O minus</td>
+            <td>Pune, Maharashta</td>
+            <td>201115041</td>
+          </tr>
+          <tr>
+            <td>AB plus</td>
+            <td>Mumbai, Maharashtra</td>
+            <td>201117930</td>
+          </tr>
+          <tr>
+            <td>O plus</td>
+            <td>Ahemdabad, Gujarat</td>
+            <td>201113640</td>
+          </tr>
+          <tr>
+            <td>AB minus</td>
+            <td>Lucknow, Uttar Pradesh</td>
+            <td>201118731</td>
+          </tr>
+          <tr>
+            <td>O minus</td>
+            <td>Nagpur, Maharashta</td>
+            <td>201115041</td>
+          </tr>
+          <tr>
+            <td>B plus</td>
+            <td>Kolakta, West Bengal</td>
+            <td>201117920</td>
+          </tr>
+          <tr>
+            <td>A plus</td>
+            <td>Gandhinagar, Gujarat</td>
+            <td>201113010</td>
+          </tr>
+        <script>
+            function myFunction() {
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("blood");
+              tr = table.getElementsByTagName("tr");
+            
+              // Loop through all table rows, and hide those who don't match the search query
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            </script>
+          </body>
+          </html>

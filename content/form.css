@@ -1,0 +1,86 @@
+body {
+    background-image:url(../img/rbc.jpg);
+    background-size: cover;
+    opacity: 0.75;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    color: mintcream;
+  }
+  
+  #outside {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  form {
+    margin: auto;
+    width: 70%;
+    padding: 1em;
+    border: 5px solid navy;
+    border-radius: 1em;
+  }
+
+  #registration{
+    background-color: black;
+  }
+
+  #contact{
+    background-color: black;
+  }
+  
+  fieldset { 
+    border:3px solid rgb(77, 8, 42);
+    margin: 10px;
+   }
+  
+  legend {
+    font-weight: 700;
+    color: rgb(51, 124, 167);
+  }
+  
+  #number {
+    width: 150px;
+  }
+  
+  
+  div + div {
+    margin-top: 1em;
+    }
+  
+  input, textarea {
+    width: 200px;
+    border: 1px solid #999;
+  }
+  
+  button {
+    margin: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: rgb(77, 10, 49);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    
+  }
+  a:link, a:active, a:visited
+  {
+    text-decoration: none;
+  }
+a:hover
+  {
+    background-color: black;
+  } 
+  
+  #submitbutton {
+    display: flex; 
+    justify-content: center;
+  }
+  
+  
