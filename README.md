@@ -15,5 +15,5 @@ HTML, CSS, JavaScript
 PHP, MySQL
 ### Database
 MySQL Workbench
-#### Website URL: https://redbank.azurewebsites.net/index.php
+#### Website URL: https://redbank.azurewebsites.net
 #### Project Demo URL (Video):
