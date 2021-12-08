@@ -16,4 +16,4 @@ PHP, MySQL
 ### Database
 MySQL Workbench
 #### Website URL: https://redbank.azurewebsites.net
-#### Project Demo URL (Video):
+#### Project Demo URL (Video): https://drive.google.com/file/d/1Ar4dW7MRxq1G5idqWpFMQqThYL7fhCLz/view?usp=sharing
